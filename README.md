@@ -13,8 +13,8 @@ Frontend: React, JavaScript, Bootstrap, HTML oraz CSS. Backend: Node.js. Baza da
 
 Instalacja oraz obsługa:
 
-Aby aplikacja działała należy zainstalować odopwiednie moduły w folderze frontend poleceniami w terminalu np. w Visual Studio Code(crtl + `):
-cd frontend - aby wejsc do folderu frontend
+Aby aplikacja działała należy zainstalować odopwiednie moduły w folderach frontend oraz backend poleceniami w terminalu np. w Visual Studio Code(crtl + `):
+cd frontend/backend - aby wejsc do folderu frontend lub backend
 npm install - instalacja potrzebnych modułów
 
 Aby prawidłowo włączyć aplikację będą potrzebne dwa terminale np. w programie Visual Studio Code.
@@ -25,6 +25,8 @@ Teraz można włączyć drugie okienko terminalu, po prawej stronie należy klik
 Import bazy danych:
 
 Należy też pamiętać o zimportowaniu bazy danych o nazwie dzial_wsparcia z pliku baza_danych.sql na platforme XAMPP, phpMyAdmin, oraz aby w XAMPP control mieć włączone moduły Apache i MySQL.
+W bazie danych są trzy konta, uprawnienia kont zależne są od pola "level_id", gdzie wartość 1 oznacza administratora, 2  moderatora, 3  zwykłego użykownika. Konta zostały stworzone w celu testowania funkcjonalności.
+level_id domyślnie jest ustawiane na 3.
 
 
 
@@ -42,8 +44,8 @@ Frontend: React, JavaScript, Bootstrap, HTML, and CSS. Backend: Node.js. Data ba
 
 Installation and Usage:
 
-To run the application, you need to install the required modules in the frontend folder using terminal commands, e.g., in Visual Studio Code (Ctrl + `):
-cd frontend - to enter the frontend folder
+To run the application, you need to install the required modules in the frontend and backend folders using terminal commands, e.g., in Visual Studio Code (Ctrl + `):
+cd frontend/backend - to enter the frontend or backend folder
 npm install - to install the required modules
 
 To run the application properly, you will need two terminals, e.g., in Visual Studio Code.
@@ -54,3 +56,5 @@ Now you can open a second terminal window by clicking the + next to the terminal
 Database Import:
 
 Remember to import the database named dzial_wsparcia from the file baza_danych.sql using a platform like XAMPP and phpMyAdmin. Also, make sure the Apache and MySQL modules are running in the XAMPP control panel.
+The database contains three accounts. Account permissions are dependent on the "level_id" field, where value 1 is the administator, 2 is the moderator, and 3 is the default user. Accounts were made to test the functionality of the application.
+level_id is set to 3 by default.
